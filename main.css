@@ -32,9 +32,26 @@ button {
     cursor: pointer;
 }
   
-button:hover {
+button:active {
     background: #2ecc71;
 }
 
 .inc{margin-right: 5px;}
 .dec{margin-left: 5px;}
+
+@media (max-width: 1000px) {
+    .counter{
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 20px;
+        -webkit-transition: 0.05s;
+        transition: 0.05s;
+    }
+
+    button:active  {
+		background: #2ecc71;
+	}
+
+}
